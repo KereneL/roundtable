@@ -9,10 +9,6 @@ export default function Home() {
 
   return (
     <main className="flex flex-col grow-1 gap-8 justify-items-center m-4">
-      <div>
-        <p>WebSocket Status: {socketStatus ? "Connected" : "Disconnected"}</p>
-      </div>
-
       {/* Conditionally render components based on currentView */}
       {currentView === "login" && (
         <Login onLogin={login} />
